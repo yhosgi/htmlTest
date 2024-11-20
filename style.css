@@ -1,0 +1,150 @@
+body {
+    /* フォントをsans-serifに設定 */
+    font-family: sans-serif;
+    /* 行の高さを1.6倍に設定、ブラウザのデフォルトの行の高さを削除 */
+    line-height: 1.6;
+    /* 外側の余白を0に設定、ブラウザのデフォルトの余白を削除 */
+    margin: 0;
+    /* 背景色を薄い水色に設定 */
+    background-color: #e8f6fa;
+}
+
+header {
+    /* 幅いっぱいを指定 */
+    width: 100%;
+    /* 高さを50pxに指定 */
+    height: 50px;
+    /* 背景色を薄い黄色で半透明に設定 */
+    background-color: rgba(252, 252, 218, 0.683);
+    /* テキスト色を黒に設定 */
+    color: black;
+    /* 内側の余白を垂直0pxで両端15%で空けるように設定 */
+    padding: 0 15%;
+    /* テキストを中央揃えに設定 */
+    text-align: center;
+    /* 中の要素を横並びにする */
+    display: flex;
+    /* 要素を中央に移動させる */
+    justify-content: center;
+    /* 見出しとmenuの位置を垂直中央に並べる */
+    align-items: center;
+    /* padding部分を含んで幅100%にするため */
+    box-sizing: border-box;
+    /* ウィンドウを基準に画面を固定 */
+    position: fixed;
+    /* 上下の固定位置を上から0pxにする */
+    top: 0px;
+    /* 左右の固定位置を左から0pxにする */
+    left: 0px;
+}
+
+img {
+    width: 100%;
+}
+
+@media screen and (min-width: 481px) {
+    img {
+      max-width: 1080px;
+    }
+}
+
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+main {
+    /* 最大幅を800pxに設定 */
+    max-width: 800px;
+    /* 上下のマージンを20px、左右のマージンを自動に設定 */
+    margin: 20px auto;
+    /* 内側の余白を20pxに設定 */
+    padding: 20px;
+    /* 背景色を白に設定 */
+    background-color: white;
+    /* 薄い影を追加 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    /* セクションの下部マージンを20pxに設定 */
+    margin-bottom: 20px;
+}
+
+div {
+    margin: 50px;
+}
+
+
+h2 {
+    /* 見出しの下部マージンを10pxに設定 */
+    margin-bottom: 10px;
+}
+
+.goalList {
+    /* 「目標一覧」リストの非表示 */
+    display: none;
+}
+
+label {
+    /* ラベルをインライン要素からブロック要素として表示、縦並び、幅が親要素の100%、高さや幅が指定できるようになる */
+    display: block;
+    /* ラベルの下部マージンを5pxに設定 */
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    /* 幅を100%に設定 */
+    width: 100%;
+    /* 内側の余白を10pxに設定 */
+    padding: 10px;
+    /* 下部のマージンを15pxに設定 */
+    margin-bottom: 15px;
+    /* 境界線をグレーに設定 */
+    border: 1px solid gray;
+    /* 要素の幅と高さにパディングとボーダーが含まれるように設定 */
+    box-sizing: border-box;
+}
+
+button {
+    /* 上下10px、左右15pxの内側余白を設定 */
+    padding: 10px 15px;
+    /* 背景色を濃いグレーに設定 */
+    background-color: #8b8b8b;
+    /* テキスト色を白に設定 */
+    color: white;
+    /* 境界線を削除 */
+    border: none;
+    /* カーソルをポインターに設定 */
+    cursor: pointer;
+    /* 幅を100%に設定 */
+    width: 100%;
+}
+
+button:hover {
+    /* ホバー時の背景色を設定 */
+    background-color: black;
+}
+
+nav {
+    /* ナビゲーションの上部マージンを20pxに設定 */
+    margin-top: 20px;
+}
+
+footer {
+    /* テキストを中央揃えに設定 */
+    text-align: center;
+    /* 内側の余白を16pxに設定 */
+    padding: 16px;
+    /* 背景色を濃いグレーに設定 */
+    background-color: #333;
+    /* テキスト色を白に設定 */
+    color: white;
+    /* 幅を100%に設定 */
+    width: 100%;
+    /* フッターの上部マージンを追加して位置を下げる */
+    margin-top: 255px;
+}
